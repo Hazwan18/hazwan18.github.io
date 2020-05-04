@@ -1,0 +1,2164 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>MyVacation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/preview.css">
+		
+		<script src="js/date_time.js" type="text/javascript" ></script>
+		<!-- jssor image slider in AboutMalaysia javascript -->
+		<script src="js/jssor.slider-23.1.0.min.js" type="text/javascript"></script>
+		<!-- jquery javascript (Open source under the BSD License) -->	
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/jquery.counterup.min.js"></script>
+		<script src="js/jquery.nicescroll.min.js"></script>
+		<script src="js/jquery.easing.min.js"></script>
+		
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/appear.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/scrolling-nav.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/showHide.js" type="text/javascript"></script>
+
+
+<!-- Google Map Need to register to get API = AIzaSyAZ4MURyNzomUtV3Z7eglV5oKjzsKPEOXE-->
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZ4MURyNzomUtV3Z7eglV5oKjzsKPEOXE&callback=initMap" type="text/javascript"></script>
+		
+		<script>
+			function initialize() {
+			  var mapOptions = {
+				zoom: 14,
+				scrollwheel: false,
+				center: new google.maps.LatLng(1.4268, 103.6298)
+			  };
+			  var map = new google.maps.Map(document.getElementById('googleMapKLCC'),
+				  mapOptions);
+			  var marker = new google.maps.Marker({
+				position: map.getCenter(),
+				animation:google.maps.Animation.BOUNCE,
+				icon: 'img/map-marker.png',
+				map: map
+			  });
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+			<script>
+			function initialize() {
+			  var mapOptions = {
+				zoom: 14,
+				scrollwheel: false,
+				center: new google.maps.LatLng(3.1528, 101.7038)
+			  };
+			  var map = new google.maps.Map(document.getElementById('googleMapKLTower'),
+				  mapOptions);
+			  var marker = new google.maps.Marker({
+				position: map.getCenter(),
+				animation:google.maps.Animation.BOUNCE,
+				icon: 'img/map-marker.png',
+				map: map
+			  });
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>
+			function initialize() {
+			  var mapOptions = {
+				zoom: 14,
+				scrollwheel: false,
+				center: new google.maps.LatLng(3.2347, 101.7478)
+			  };
+			  var map = new google.maps.Map(document.getElementById('googleMapBukitTabur'),
+				  mapOptions);
+			  var marker = new google.maps.Marker({
+				position: map.getCenter(),
+				animation:google.maps.Animation.BOUNCE,
+				icon: 'img/map-marker.png',
+				map: map
+			  });
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>
+			function initialize() {
+			  var mapOptions = {
+				zoom: 14,
+				scrollwheel: false,
+				center: new google.maps.LatLng(6.0753, 116.5588)
+			  };
+			  var map = new google.maps.Map(document.getElementById('googleMapKinabalu'),
+				  mapOptions);
+			  var marker = new google.maps.Marker({
+				position: map.getCenter(),
+				animation:google.maps.Animation.BOUNCE,
+				icon: 'img/map-marker.png',
+				map: map
+			  });
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>
+			function initialize() {
+			  var mapOptions = {
+				zoom: 14,
+				scrollwheel: false,
+				center: new google.maps.LatLng(3.1494, 101.6838)
+			  };
+			  var map = new google.maps.Map(document.getElementById('googleMapMonument'),
+				  mapOptions);
+			  var marker = new google.maps.Marker({
+				position: map.getCenter(),
+				animation:google.maps.Animation.BOUNCE,
+				icon: 'img/map-marker.png',
+				map: map
+			  });
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>
+			function initialize() {
+			  var mapOptions = {
+				zoom: 14,
+				scrollwheel: false,
+				center: new google.maps.LatLng(3.1421, 101.6918)
+			  };
+			  var map = new google.maps.Map(document.getElementById('googleMapMosque'),
+				  mapOptions);
+			  var marker = new google.maps.Marker({
+				position: map.getCenter(),
+				animation:google.maps.Animation.BOUNCE,
+				icon: 'img/map-marker.png',
+				map: map
+			  });
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script>
+			function initialize() {
+			  var mapOptions = {
+				zoom: 14,
+				scrollwheel: false,
+				center: new google.maps.LatLng(3.8242, 113.7620)
+			  };
+			  var map = new google.maps.Map(document.getElementById('googleMapNiah'),
+				  mapOptions);
+			  var marker = new google.maps.Marker({
+				position: map.getCenter(),
+				animation:google.maps.Animation.BOUNCE,
+				icon: 'img/map-marker.png',
+				map: map
+			  });
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+   $('.show_hide').showHide({			 
+		speed: 1000,  // speed you want the toggle to happen	
+		easing: '',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
+		changeText: 1, // if you dont want the button text to change, set this to 0
+		showText: 'View',// the button text to show when a div is closed
+		hideText: 'Close' // the button text to show when a div is open
+					 
+	}); 
+
+
+});
+
+</script>
+<script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+</script>
+
+<script>
+
+  //Hide Overflow of Body on DOM Ready //
+$(document).ready(function(){
+    $("body").css("overflow", "hidden");
+});
+
+// Show Overflow of Body when Everything has Loaded 
+$(window).load(function(){
+    $("body").css("overflow", "visible");        
+    var nice=$('html').niceScroll({
+	cursorborder:"5",
+	cursorcolor:"#00AFF0",
+	cursorwidth:"3px",
+	boxzoom:true, 
+	autohidemode:true
+	});
+
+});
+</script>		
+<!-- Slider Script -->
+        <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:0,d:600,y:-290,e:{y:27}}],
+              [{b:0,d:1000,y:185},{b:1000,d:500,o:-1},{b:1500,d:500,o:1},{b:2000,d:1500,r:360},{b:3500,d:1000,rX:30},{b:4500,d:500,rX:-30},{b:5000,d:1000,rY:30},{b:6000,d:500,rY:-30},{b:6500,d:500,sX:1},{b:7000,d:500,sX:-1},{b:7500,d:500,sY:1},{b:8000,d:500,sY:-1},{b:8500,d:500,kX:30},{b:9000,d:500,kX:-30},{b:9500,d:500,kY:30},{b:10000,d:500,kY:-30},{b:10500,d:500,c:{x:87.50,t:-87.50}},{b:11000,d:500,c:{x:-87.50,t:87.50}}],
+              [{b:0,d:600,x:410,e:{x:27}}],
+              [{b:-1,d:1,o:-1},{b:0,d:600,o:1,e:{o:5}}],
+              [{b:-1,d:1,c:{x:175.0,t:-175.0}},{b:0,d:800,c:{x:-175.0,t:175.0},e:{c:{x:7,t:7}}}],
+              [{b:-1,d:1,o:-1},{b:0,d:600,x:-570,o:1,e:{x:6}}],
+              [{b:-1,d:1,o:-1,r:-180},{b:0,d:800,o:1,r:180,e:{r:7}}],
+              [{b:0,d:1000,y:80,e:{y:24}},{b:1000,d:1100,x:570,y:170,o:-1,r:30,sX:9,sY:9,e:{x:2,y:6,r:1,sX:5,sY:5}}],
+              [{b:2000,d:600,rY:30}],
+              [{b:0,d:500,x:-105},{b:500,d:500,x:230},{b:1000,d:500,y:-120},{b:1500,d:500,x:-70,y:120},{b:2600,d:500,y:-80},{b:3100,d:900,y:160,e:{y:24}}],
+              [{b:0,d:1000,o:-0.4,rX:2,rY:1},{b:1000,d:1000,rY:1},{b:2000,d:1000,rX:-1},{b:3000,d:1000,rY:-1},{b:4000,d:1000,o:0.4,rX:-1,rY:-1}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $Idle: 2000,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions,
+                $Breaks: [
+                  [{d:2000,b:1000}]
+                ]
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 600);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script>
+
+    </head>
+<body >
+		 <!-- start preloader -->
+        <div id="loader-wrapper">
+            <div class="logo"></div>
+            <div id="loader">
+            </div>
+        </div>
+        <!-- end preloader -->
+		
+<!-- Navigation Bar -->
+<header class="main_menu_sec navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-12">
+				
+				<div class="lft_hd">
+					<img src="img/GIF/myvacation.gif" href="index.html" alt="myvacation"/>  
+				</div>
+			</div>			
+			<div class="col-lg-9 col-md-9 col-sm-12">
+				<div class="rgt_hd">					
+					<div class="main_menu">
+						<nav id="nav_menu">
+							<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>	
+						<div id="navbar">
+							<ul>
+								<li><a class="page-scroll" href="index.html">Home</a></li> 
+								<li><a class="page-scroll" href="#aboutmalaysia">About Malaysia</a></li>
+							<li><a href="#">Destination<i class="fa fa-angle-down"></i></a>
+							<ul>
+								<li><a class="page-scroll" href="#klcc">Petronas Twin Tower</a></li>
+								<li><a class="page-scroll" href="#kltower">KL Tower</a></li>
+								<li><a class="page-scroll" href="#monument">National Monument</a></li>
+								<li><a class="page-scroll" href="#mosque">National Mosque</a></li>
+								<li><a class="page-scroll" href="#bukittabur">Bukit Tabur</a></li>
+								<li><a class="page-scroll" href="#niahpark">Niah National Park</a></li>
+								<li><a class="page-scroll" href="#kinabalu">Mount Kinabalu</a></li>
+							</ul>
+							</li> 						
+							<li><a class="page-scroll" href="#ebooks">Travel Guidebook</a></li>
+							<li><a href="#">Gallery<i class="fa fa-angle-down"></i></a>
+							<ul>
+								<li><a class="page-scroll" href="#photogallery">Photo</a></li>
+								<li><a class="page-scroll" href="#videogallery">Video</a></li>
+							</ul>
+							
+							<li><a href="#">Extra<i class="fa fa-angle-down"></i></a>
+							
+							<ul>							
+							   	<li><a class="page-scroll" href="#ourteam">Our Team</a></li>
+								<li><a class="page-scroll" href="#ourclient">Our Happy Client</a></li>
+							</ul>
+							</li>
+							<li><a class="page-scroll" href="#contactus">Contact Us</a></li>
+							<li><a class="page-scroll" href="#comments">Comments</a></li>
+						</div>		
+						</nav>			
+					</div>					
+						
+				</div>
+			</div>	
+		</div>	
+	</div>	
+</header>
+
+<!-- Home Page -->
+<section id="slider_sec">
+	<div class="container">
+		<div class="row">
+			<div class="slider">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<div class="wrap_caption">
+						  <div class="caption_carousel">
+							<h1>Hello World!</h1>
+							<p>This webpage will provide information and fact about the destinations in Malaysia which is iconic and historical</p>
+						  </div>						
+						</div>
+					</div>					
+					<div class="item">
+						<div class="wrap_caption">
+						  <div class="caption_carousel">
+							<h1>Stay TUNE</h1>
+							<p>There are allot interesting fact and information</p>
+						  </div>						
+						</div>
+					</div>					
+					<div class="item ">
+						<div class="wrap_caption">
+						  <div class="caption_carousel">
+							<h1><span id="date_time"></span></h1>
+							<p>Malaysia Time UTC+08:00</p>                      
+							<script type="text/javascript">window.onload = date_time('date_time');</script>
+						  </div>						
+						</div>
+					</div>			
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left left_crousel_btn" href="#carousel-example-generic" role="button" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+					<span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right right_crousel_btn" href="#carousel-example-generic" role="button" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+					<span class="sr-only">Next</span>
+				  </a>
+				</div>
+			</div>	
+		</div>			
+	</div>	
+</section>
+
+
+<!-- Travel Guidebook-->
+<section id="ebooks">
+
+<div class="container">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+					<h1>Travel Guidebook</h1>
+					<h2>Click image to view in PDF </h2>
+				</div>			
+			</div>
+			<div class="gallery">
+			  <a target="_blank" href="ebook/Central Region.pdf">
+				<img src="ebook/cr.jpg" alt="Central Region Travel Guide" width="300" height="200">
+			  </a>
+			  <div class="desc">Central Region Travel Guide</div>
+			</div>
+
+			<div class="gallery">
+			  <a target="_blank" href="ebook/East Malaysia.pdf">
+				<img src="ebook/em.jpg" alt="East Malaysia Travel Guide" width="300" height="200">
+			  </a>
+			  <div class="desc">East Malaysia Travel Guide</div>
+			</div>
+
+			<div class="gallery">
+			  <a target="_blank" href="ebook/Malaysia Travel Guide.pdf">
+				<img src="ebook/tg.jpg" alt="Travel Guide" width="300" height="200">
+			  </a>
+			  <div class="desc">Malaysian Travel Guide 2015</div>
+			</div>
+
+			<div class="gallery">
+			  <a target="_blank" href="ebook/Southern Region.pdf">
+				<img src="ebook/sr.jpg" alt="Southern Region Travel Guide" width="300" height="200">
+			  </a>
+			  <div class="desc">Southern Region Travel Guide</div>
+			</div>
+
+			<div class="gallery">
+			  <a target="_blank" href="ebook/East Coast Region.pdf">
+				<img src="ebook/ecr.jpg" alt="East Coast Region" width="300" height="200">
+			  </a>
+			  <div class="desc">East Coast Region Travel Guide</div>
+			</div>				
+						
+	</div>
+</section>
+
+<!-- Photos -->
+<section id="photogallery">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+					<h1>MYvacation's Photo</h1>
+					<h2>Pictures of iconic and historical destinations around Malaysia</h2>
+				</div>			
+			</div>		
+			<div class="col-lg-12">
+				<div class="portfolio-filter text-uppercase text-center">
+				<ul class="filter">
+				<li class="active" data-filter="*">All Picture</li>
+				<li data-filter=".pic-klcc">Petronas Twin Tower</li>
+				<li data-filter=".pic-kltower">KL Tower</li>
+				<li data-filter=".pic-monument">National Monument</li>
+				<li data-filter=".pic-mosque">National Mosque</li>
+				<li data-filter=".pic-tabur">Bukit Tabur</li>
+				<li data-filter=".pic-niah">Niah National Park</li>
+				<li data-filter=".pic-kinabalu">Mount Kinabalu</li>
+				</ul>
+				</div>
+				 
+				<div class="all-portfolios">
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-klcc">
+						<img id="myImg" src="img/KLCC/KLCC (1).jpg" alt="KLCC 1" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+						  <span class="close">&times;</span>
+						  <img class="modal-content" id="img01">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal');
+								var img = document.getElementById('myImg');
+								var modalImg = document.getElementById("img01");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+					</div>				
+					</div>
+															
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-klcc">
+						<img id="myImg2" src="img/KLCC/KLCC (2).jpg" alt="KLCC 2" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal2" class="modal2">
+						  <span class="close2">&times;</span>
+						  <img class="modal-content" id="img02">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal2');
+								var img = document.getElementById('myImg2');
+								var modalImg = document.getElementById("img02");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close2")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>
+					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-klcc">
+						<img id="myImg3" src="img/KLCC/KLCC (3).jpg" alt="KLCC 3" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal3" class="modal3">
+						  <span class="close3">&times;</span>
+						  <img class="modal-content" id="img03">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal3');
+								var img = document.getElementById('myImg3');
+								var modalImg = document.getElementById("img03");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close3")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>			
+					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-klcc">
+						<img id="myImg21" src="img/KLCC/KLCC (6).jpg" alt="KLCC 4" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal21" class="modal21">
+						  <span class="close21">&times;</span>
+						  <img class="modal-content" id="img021">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal21');
+								var img = document.getElementById('myImg21');
+								var modalImg = document.getElementById("img021");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close21")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>	
+					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-kltower">
+						<img id="myImg4" src="img/KL Tower/KL Tower jpg (1).jpg" alt="KL Tower 1" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal4" class="modal4">
+						  <span class="close4">&times;</span>
+						  <img class="modal-content" id="img04">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal4');
+								var img = document.getElementById('myImg4');
+								var modalImg = document.getElementById("img04");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close4")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>
+					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-kltower">
+						<img id="myImg5" src="img/KL Tower/KL Tower jpg (3).jpg" alt="KL Tower 2" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal5" class="modal5">
+						  <span class="close5">&times;</span>
+						  <img class="modal-content" id="img05">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal5');
+								var img = document.getElementById('myImg5');
+								var modalImg = document.getElementById("img05");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close5")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>
+					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-kltower">
+						<img id="myImg6" src="img/KL Tower/KL Tower jpg (6).jpg" alt="KL Tower 3" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal6" class="modal6">
+						  <span class="close6">&times;</span>
+						  <img class="modal-content" id="img06">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal6');
+								var img = document.getElementById('myImg6');
+								var modalImg = document.getElementById("img06");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close6")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>
+					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-kltower">
+						<img id="myImg22" src="img/KL Tower/KL Tower jpg (5).jpg" alt="KL Tower 4" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal22" class="modal22">
+						  <span class="close22">&times;</span>
+						  <img class="modal-content" id="img022">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal22');
+								var img = document.getElementById('myImg22');
+								var modalImg = document.getElementById("img022");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close22")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>
+					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-mosque">
+						<img id="myImg7" src="img/National Mosque/National Mosque (1).jpg" alt="National Mosque 1" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal7" class="modal7">
+						  <span class="close7">&times;</span>
+						  <img class="modal-content" id="img07">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal7');
+								var img = document.getElementById('myImg7');
+								var modalImg = document.getElementById("img07");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close7")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>
+					
+<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-mosque">
+						<img id="myImg8" src="img/National Mosque/National Mosque (2).jpg" alt="National Mosque 2" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal8" class="modal8">
+						  <span class="close8">&times;</span>
+						  <img class="modal-content" id="img08">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal8');
+								var img = document.getElementById('myImg8');
+								var modalImg = document.getElementById("img08");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close8")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>
+
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-mosque">
+						<img id="myImg9" src="img/National Mosque/National Mosque (3).jpg" alt="National Mosque 3" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal9" class="modal9">
+						  <span class="close9">&times;</span>
+						  <img class="modal-content" id="img09">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal9');
+								var img = document.getElementById('myImg9');
+								var modalImg = document.getElementById("img09");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close9")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>
+
+					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-mosque">
+						<img id="myImg23" src="img/National Mosque/National Mosque (7).jpg" alt="National Mosque 4" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal23" class="modal23">
+						  <span class="close23">&times;</span>
+						  <img class="modal-content" id="img023">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal23');
+								var img = document.getElementById('myImg23');
+								var modalImg = document.getElementById("img023");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close23")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>	
+						
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-monument">
+						<img id="myImg10" src="img/National Monument/National Monemunt (1).jpg" alt="National Monument 1" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal10" class="modal10">
+						  <span class="close10">&times;</span>
+						  <img class="modal-content" id="img010">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal10');
+								var img = document.getElementById('myImg10');
+								var modalImg = document.getElementById("img010");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close10")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>					
+					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-monument">
+						<img id="myImg11" src="img/National Monument/National Monemunt (3).jpg" alt="National Monument 2" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal11" class="modal11">
+						  <span class="close11">&times;</span>
+						  <img class="modal-content" id="img011">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal11');
+								var img = document.getElementById('myImg11');
+								var modalImg = document.getElementById("img011");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close11")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>			
+					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-monument">
+						<img id="myImg12" src="img/National Monument/National Monemunt (6).jpg" alt="National Monument 3" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal12" class="modal12">
+						  <span class="close12">&times;</span>
+						  <img class="modal-content" id="img012">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal12');
+								var img = document.getElementById('myImg12');
+								var modalImg = document.getElementById("img012");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close12")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>			
+					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-monument">
+						<img id="myImg24" src="img/National Monument/National Monemunt (5).jpg" alt="National Monument 4" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal24" class="modal24">
+						  <span class="close24">&times;</span>
+						  <img class="modal-content" id="img024">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal24');
+								var img = document.getElementById('myImg24');
+								var modalImg = document.getElementById("img024");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close24")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>	
+					
+					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-tabur">
+						<img id="myImg12" src="img/Bukit Tabur/Bukit Tabur (1).jpg" alt="Bukit Tabur 1" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal12" class="modal12">
+						  <span class="close12">&times;</span>
+						  <img class="modal-content" id="img012">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal12');
+								var img = document.getElementById('myImg12');
+								var modalImg = document.getElementById("img012");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close12")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>					
+
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-tabur">
+						<img id="myImg13" src="img/Bukit Tabur/Bukit Tabur (2).jpg" alt="Bukit Tabur 2" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal13" class="modal13">
+						  <span class="close13">&times;</span>
+						  <img class="modal-content" id="img013">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal13');
+								var img = document.getElementById('myImg13');
+								var modalImg = document.getElementById("img013");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close13")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>					
+
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-tabur">
+						<img id="myImg14" src="img/Bukit Tabur/Bukit Tabur (3).jpg" alt="Bukit Tabur 3" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal14" class="modal14">
+						  <span class="close14">&times;</span>
+						  <img class="modal-content" id="img014">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal14');
+								var img = document.getElementById('myImg14');
+								var modalImg = document.getElementById("img014");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close14")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>
+
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-tabur">
+						<img id="myImg25" src="img/Bukit Tabur/Bukit Tabur (4).jpg" alt="Bukit Tabur 4" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal25" class="modal25">
+						  <span class="close25">&times;</span>
+						  <img class="modal-content" id="img025">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal25');
+								var img = document.getElementById('myImg25');
+								var modalImg = document.getElementById("img025");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close25")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>		
+							
+
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-niah">
+						<img id="myImg15" src="img/Niah/Niah National Park(10).jpg" alt="Niah 1" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal15" class="modal15">
+						  <span class="close15">&times;</span>
+						  <img class="modal-content" id="img015">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal15');
+								var img = document.getElementById('myImg15');
+								var modalImg = document.getElementById("img015");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close15")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>				
+					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-niah">
+						<img id="myImg16" src="img/Niah/Niah National Park(2).JPG" alt="Niah 2" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal16" class="modal16">
+						  <span class="close16">&times;</span>
+						  <img class="modal-content" id="img016">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal16');
+								var img = document.getElementById('myImg16');
+								var modalImg = document.getElementById("img016");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close16")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>		
+					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-niah">
+						<img id="myImg17" src="img/Niah/Niah National Park(1).jpg" alt="Niah 3" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal17" class="modal17">
+						  <span class="close17">&times;</span>
+						  <img class="modal-content" id="img017">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal17');
+								var img = document.getElementById('myImg17');
+								var modalImg = document.getElementById("img017");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close17")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>		
+					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-niah">
+						<img id="myImg26" src="img/Niah/Niah National Park(5).jpg" alt="Niah 4" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal26" class="modal26">
+						  <span class="close26">&times;</span>
+						  <img class="modal-content" id="img026">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal26');
+								var img = document.getElementById('myImg26');
+								var modalImg = document.getElementById("img026");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close26")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>
+					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-kinabalu">
+						<img id="myImg17" src="img/Kinabalu/mk1.JPG" alt="Kinabalu 1" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal17" class="modal17">
+						  <span class="close17">&times;</span>
+						  <img class="modal-content" id="img017">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal17');
+								var img = document.getElementById('myImg17');
+								var modalImg = document.getElementById("img017");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close17")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>		
+									
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-kinabalu">
+						<img id="myImg18" src="img/Kinabalu/mk9.jpg" alt="Kinabalu 1" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal18" class="modal18">
+						  <span class="close18">&times;</span>
+						  <img class="modal-content" id="img018">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal18');
+								var img = document.getElementById('myImg18');
+								var modalImg = document.getElementById("img018");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close18")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>
+
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-kinabalu">
+						<img id="myImg19" src="img/Kinabalu/mk2.jpg" alt="Kinabalu 3" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal19" class="modal19">
+						  <span class="close19">&times;</span>
+						  <img class="modal-content" id="img019">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal19');
+								var img = document.getElementById('myImg19');
+								var modalImg = document.getElementById("img019");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close19")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>
+					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio pic-kinabalu">
+						<img id="myImg27" src="img/Kinabalu/mk12.jpg" alt="Kinabalu 4" width="277" height="277">
+						<!-- The Modal -->
+						<div id="myModal27" class="modal27">
+						  <span class="close27">&times;</span>
+						  <img class="modal-content" id="img027">
+						  <div id="caption"></div>
+						</div>
+						<script>
+								var modal = document.getElementById('myModal27');
+								var img = document.getElementById('myImg27');
+								var modalImg = document.getElementById("img027");
+								var captionText = document.getElementById("caption");
+							img.onclick = function(){
+									modal.style.display = "block";
+									modalImg.src = this.src;
+									captionText.innerHTML = this.alt;
+								}
+								var span = document.getElementsByClassName("close27")[0];
+							span.onclick = function() { 
+									modal.style.display = "none";
+								}
+						</script>
+						
+					</div>				
+					</div>
+					
+					
+				</div>
+
+
+			</div>
+				
+			</div>			
+		</div>
+</section>
+
+<!-- Video -->
+<section id="videogallery">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+					<h1>MYvacation's Video</h1>
+					<h2>Videos of iconic and historical destinations around Malaysia</h2>
+				</div>			
+			</div>		
+			<div class="col-lg-12">
+				<div class="portfolio-filter text-uppercase text-center">
+				<ul class="filter">
+				<li class="active" data-filter="*">All Videos</li>
+				<li data-filter=".vid-klcc">Petronas Twin Tower</li>
+				<li data-filter=".vid-kltower">KL Tower</li>
+				<li data-filter=".vid-monument">National Monument</li>
+				<li data-filter=".vid-mosque">National Mosque</li>
+				<li data-filter=".vid-tabur">Bukit Tabur</li>
+				<li data-filter=".vid-niah">Niah National Park</li>
+				<li data-filter=".vid-kinabalu">Mount Kinabalu</li>
+				</ul>
+				</div>
+				 
+				<div class="all-portfolios">
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio vid-klcc">
+					<video width="320" height="240" controls>
+					<source src="video\Petronas Twin Tower.MP4" type="video/mp4">
+					</video>
+					</div>				
+					</div>				
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio vid-kltower">
+					<video width="320" height="240" controls>
+					<source src="video\KL Tower.MKV" type="video/mp4">
+					</video>
+					</div>				
+					</div>					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio vid-tabur">
+					<video width="320" height="240" controls>
+					<source src="video\Bukit Tabur.mp4" type="video/mp4">
+					</video>
+					</div>				
+					</div>					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio vid-monument">
+					<video width="320" height="240" controls>
+					<source src="video\National Monument.mp4" type="video/mp4">
+					</video>
+					</div>				
+					</div>					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio vid-niah">
+					<video width="320" height="240" controls>
+					<source src="video\Niah National Park.mp4" type="video/mp4">
+					</video>
+					</div>				
+					</div>					
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio vid-mosque">
+					<video width="320" height="240" controls>
+					<source src="video\National Mosque Of Malaysia.mp4" type="video/mp4">
+					</video>
+					</div>				
+					</div>				
+							
+					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="single-portfolio vid-kinabalu">
+					<video width="320" height="240" controls>
+					<source src="video\Mount Kinabalu.mp4" type="video/mp4">
+					</video>
+					</div>				
+					</div>				
+									
+					
+				</div>
+
+
+			</div>
+				
+			</div>			
+		</div>
+</section>
+
+
+
+
+
+<!-- Our Team -->
+<section id="ourteam">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+					<h1>Our Team Members</h1>
+					<h2>MYvacation advisor and builders</h2>
+				</div>			
+			</div>		
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12">
+				<div class="all_team">
+					<div class="sngl_team">						
+						<img src="img/Our Team/Hazwan.jpg" alt=""/>	
+						<h3>Hazwan Salam<span>TP042282</span></h3>
+						<p>Fill your life with adventure, not things.Have stories to tell not stuff to show</p>						
+					</div>					
+					<div class="sngl_team">						
+						<img src="img/Our Team/Mathan.jpg" alt=""/>	
+						<h3> Mathan Raj <span>TP041841</span></h3>
+						<p>Travel brings power and love back to life</p>			
+					</div>				
+					<div class="sngl_team">						
+						<img src="img/Our Team/Nesh.jpg" alt=""/>	
+						<h3> Nesh <span>TP041856</span></h3>
+						<p>Travel can be one of the most rewarding forms of introspection </p>					
+					</div>				
+					<div class="sngl_team">						
+						<img src="img/Our Team/Edwin.jpg" alt=""/>		
+						<h3> Edwin Nga <span>TP041742</span></h3>
+						<p>One's destinations is never a place , but a new way of seeing things </p>					
+					</div>					
+				</div>			
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+<!-- Our Happy Client -->
+<section id="ourclient">
+	<div class="container">	
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+					<h1>Our Happy Clients</h1>
+					<h2>We have been providing real and acurate fact about the destinations which clients loves it</h2>
+				</div>			
+			</div>		
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12">
+				<div class="al_clt">						
+					<div class="sngl_clt">
+						<a href=""><img src="img/Our Client/Client (1).gif" alt=""/></a>
+					</div>				
+					<div class="sngl_clt">
+						<a href=""><img src="img/Our Client/Client (2).png" alt=""/></a>
+					</div>				
+					<div class="sngl_clt">
+						<a href=""><img src="img/Our Client/Client (3).png" alt=""/></a>
+					</div>				
+					<div class="sngl_clt">
+						<a href=""><img src="img/Our Client/Client (4).png" alt=""/></a>
+					</div>				
+					<div class="sngl_clt">
+						<a href=""><img src="img/Our Client/Client (5).png" alt=""/></a>
+					</div>					
+					<div class="sngl_clt">
+						<a href=""><img src="img/Our Client/Client (6).png" alt=""/></a>
+					</div>				
+					<div class="sngl_clt">
+						<a href=""><img src="img/Our Client/Client (7).png" alt=""/></a>
+					</div>								
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+
+<!-- About Malaysia -->
+<section id="aboutmalaysia">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="all_tstm">
+					
+				<div class="clnt_tstm">
+					<div class="sngl_tstm">
+						<i class="fa fa-quote-right"></i>
+						<h3>Malaysia History</h3>
+						<p>Malaysia is a Southeast Asian country inhabiting parts of the Malay Peninsula and the island of Borneo. It's known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences. </p>
+						<h6>VISIT MALAYSIA 2017</h6>					
+					</div>
+				</div>						
+				
+				<div class="clnt_tstm">
+					<div class="sngl_tstm">
+						<i class="fa fa-quote-right"></i>
+						<h3> Geographically </h3>
+						<p>Malaysia is almost as diverse as its culture. 11 states and 2 federal territories (Kuala Lumpur and Putrajaya) form Peninsular Malaysia which is separated by the South China Sea from East Malaysia which includes the 2 states (Sabah and Sarawak on the island of Borneo) and a third federal territory, the island of Labuan</p>
+					</div>
+				</div>				
+					
+				<div class="clnt_tstm">
+					<div class="sngl_tstm">
+						<i class="fa fa-quote-right"></i>
+						<h3>Gov Page</h3>
+						<p>#For more information can be obtained from the Malaysian Government’s Official Portal</p>
+						<h6><a style="color:red; font-size:120%;"  href="www.malaysia.gov.my">www.malaysia.gov.my</a></h6>				
+					</div>
+				</div>	
+				
+				<div class="clnt_tstm">
+					<div class="sngl_tstm">
+						<i class="fa fa-quote-right"></i>
+						<h3>Quick Facts</h3>
+						<p>The Population of Malaysia 29.95 million</p>
+						<p>Area : 329,758 Square km</p>
+						<p>Capital City of Malaysia : Kuala Lumpur</p>		
+                        <p>Currency : Ringgit Malaysia (RM)</p>		
+                        <p>Official Language : Bahasa Malaysia</p>	
+					</div>
+				</div>							
+				
+				</div>
+			</div>	
+		</div>
+			
+	<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:600px;height:300px;overflow:hidden;visibility:hidden;">
+
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:300px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="img/About Malaysia/About Malaysia (1).jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/About Malaysia/About Malaysia (2).jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/About Malaysia/About Malaysia (3).jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/About Malaysia/About Malaysia (4).jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/About Malaysia/About Malaysia (5).jpg" />
+              </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
+            <div data-u="prototype" style="width:12px;height:12px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora02l" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora02r" style="top:0px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
+    </div>
+<script type="text/javascript">jssor_1_slider_init();</script>
+</div>
+</section>
+
+
+
+
+
+
+
+<!-- Bukit Tabur -->
+<section id="bukittabur">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+				<h1>___________________</h1>
+					<h1>Bukit Tabur, Selangor</h1>
+				</div>			
+			</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/Tabur/Tabur1.gif" alt=""/>
+					<h2>History</h2>
+					<div class="scroll">
+					<p>Bukit Tabur, also known as Bukit Hangus is one of the oldest quartz ridge in the world measuring 16 km long and 200 metres wide.Bukit Tabur is located in Selangor at the outer edge of Klang Valley approximately 20km from Kuala Lumpur. The quartz ridge is internationally recognized as a world-class geological site. The most important factor that makes it so significant and so unique is the sheer size of the ridge, and the fact that it consists of 100% pure quartz, making it the single largest pure quartz dyke in the world. 
+					Bukit Tabur becomes local favour hiking spot for regular and new visitor due to the easy access and natural richness near by the city.</p>	
+				   </div>
+				</div>
+			</div>			
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/Tabur/Tabur2.gif" alt=""/>
+					<h2>Getting There</h2>
+					<h3>By Car</h3>
+					<p>From KL Sentral Station, Kuala Lumpur it will took about 40 minutes and 23 kilometres to reach the destination</p>
+		            <a href="https://www.google.com/maps/dir/KL+Sentral+Station+Kuala+Lumpur+Sentral+Kuala+Lumpur+Federal+Territory+of+Kuala+Lumpur+Malaysia/Bukit+Tabur/@3.142873,101.6913999,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x31cc49c0442ff9a7:0xdec2e43a59380537!2m2!1d101.6860525!2d3.1342702!1m5!1m1!1s0x31cc38fc1e795d7d:0x330ab557cd2fc26c!2m2!1d101.747778!2d3.234722)">Click here for the route</a>
+				</div>
+			</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/Tabur/Tabur3.gif" alt=""/>
+					<h2>Contact</h2>
+					<p>For further information :</p>
+					<div class="scroll">
+					<p><strong>Jabatan Perhutanan Negeri Selangor</strong>
+					<br>Bangunan Sultan Salahuddin Abdul Aziz Shah,40660 Shah Alam, Selangor Darul Ehsan.
+					<br><strong>Phone:</strong> +603-5544 7000
+					<br><strong>Fax:</strong> +603-5544 7000</p>
+					<p><a href="http://forestry.selangor.gov.my/portal/index.php/my/">Visit Website</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section id="ltd_map_sec">	  
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="map">						
+			<h1>Bukit Tabur MAP</h1><a href="#slidingDiv" class="show_hide" rel="#slidingDiv"><i class="fa fa-angle-up"></i></a>
+			<div id="slidingDiv">
+				<div class="map_area">
+					<div id="googleMapBukitTabur" style="width:100%;height:300px;"></div>
+				</div>
+			</div>	
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+</section>
+
+<!-- KL Tower -->
+<section id="kltower">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+				<h1>___________________</h1>
+					<h1>KL Tower, Kuala Lumpur</h1>
+				</div>			
+			</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/KL Tower/klt1.gif" alt=""/>
+					<h2>History</h2>
+					<div class="scroll">
+					<p>Kuala Lumpur tower was constructed in 1991 and was completed in 1996. It was officially opened by former Prime Minister of Malaysia Tun Dr. Mahathir on 1 October 1996. This tower is the fourth highest tower in the world standing 97m above sea level at Bukit Nenas. This tower is also the second tallest tower in Asia today. 
+					It is used for telecommunication purposes and features an antenna that reaches a total height of 421 metres (1,381 ft).</p>
+					</div>				
+				</div>
+			</div>			
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/KL Tower/klt2.gif" alt=""/>
+					<h2>Getting There</h2>
+					<div class="scroll">
+					<h3>By Car & Taxi</h3>
+					<p>From KL Sentral Station, Kuala Lumpur it will took about 20 minutes and 6,6 kilometres to reach the destination</p>
+					<a href="https://www.google.com/maps/dir/KL+Sentral+Station+Kuala+Lumpur+Sentral+Kuala+Lumpur+Federal+Territory+of+Kuala+Lumpur+Malaysia/KL+Tower+Jalan+P+Ramlee+Kuala+Lumpur+Federal+Territory+of+Kuala+Lumpur+Malaysia/@3.1479866,101.6836215,13.18z/data=!4m13!4m12!1m5!1m1!1s0x31cc49c0442ff9a7:0xdec2e43a59380537!2m2!1d101.6860525!2d3.1342702!1m5!1m1!1s0x31cc482b1dcd5813:0x106058ce3bc33aba!2m2!1d101.7037587!2d3.1528309">Click for the route</a>
+					<h4>By Free Shuttle</h4>
+					<p>There is a free shuttle service runs every half an hour from the main gates to the Menara KL entrance.</p>
+					<h5>By LRT Train</h5>
+					<p>Take a LRT from KL Sentral Station to Dang Wangi station( 30 minutes) and take a short 10 minute walk following the signage to Menara Kuala Lumpur</p>
+					<a href="https://www.myrapid.com.my/traveling-with-us/how-to-travel-with-us/rapid-kl/monorail-and-lrts">Click here for the LRT Webpage</a>
+					<h6>By Monorail</h6>
+					<p>Take the KL Monorail to Bukit Nanas station where you can take a 10 minutes walk to the main gate at Jalan Puncak</p>
+					<a href="https://www.myrapid.com.my/traveling-with-us/how-to-travel-with-us/rapid-kl/monorail-and-lrts">Click here for the LRT Webpage</a>
+					</div>
+				</div>
+			</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/KL Tower/klt3.gif" alt=""/>
+                    <h2>Contact</h2>
+					<p>For further information :</p>
+					<div class="scroll">
+					<p><strong>Menara Kuala Lumpur </strong>
+					<br>No.2 Jalan Punchak Off Jalan P.Ramlee ,50250 Kuala Lumpur Malaysia
+					<br><strong>Phone:</strong> +603 2020 5444
+					<br><strong>Fax:</strong> +603 2098 7001 </p>
+					<p><a href="http://www.menarakl.com.my/">Visit Website</a></p></div>				
+				    </div>
+				</div>
+			</div>
+					
+
+		</div>
+	</div>
+	<section id="ltd_map_sec">	  
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="map">						
+			<h1>KL Tower MAP</h1><a href="#slidingDiv2" class="show_hide" rel="#slidingDiv2"><i class="fa fa-angle-up"></i></a>
+			<div id="slidingDiv2">
+				<div class="map_area">
+					<div id="googleMapKLTower" style="width:100%;height:300px;"></div>
+				</div>
+			</div>	
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+</section>
+
+
+
+
+
+<!-- Petronas Twin Tower -->
+<section id="klcc">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+					<h1>___________________</h1>
+					<h1>Petronas Twin Tower</h1>
+					<h1>Kuala Lumpur</h1>
+				</div>			
+			</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/KLCC/klcc1.gif" alt=""/>
+					<h2>History</h2>
+					<div class="scroll">
+					<p>PETRONAS TWIN TOWER! I am sure everyone knows the tallest building in Malaysia and tallest twin building in the world. The question is how well do u know about Petronas Twin Tower? Let me lighten you with some amazing facts about it. Petronas Twin Tower is quite unique which has a suave architecture and a magnificent structure. The towers were designed by Argentine American architect Cesar Pelli. Petronas Twin Towers were known for being the tallest buildings in the world from 1998 to 2004 and it remains the tallest twin tower building in the world. Isn't that amazing? The twin tower consists of 88 stories and 32000 windows altogether. It is made of glass facade that was designed to resemble Islamic art motifs. The cost to build this enormous building took US $1.2 billion. Besides, the sky-bridge is at the 41st and 42nd level and it is 58.4m (192ft) long. The sky bridge itself weighs almost 750 tons. Petronas the national oil-company of Malaysia is the main occupant of these towers.</p>
+					</div>
+				</div>
+			</div>			
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/KLCC/klcc2.gif" alt=""/>
+					<h2>Getting There</h2>
+					<div class="scroll">
+					<h3>By Car & Taxi</h3>
+					<p>From KL Sentral Station, Kuala Lumpur it will took about 20 minutes and 7.0 kilometres to reach the destination</p>
+					<a href="https://www.google.com/maps/dir/KL+Sentral+Station+Kuala+Lumpur+Sentral+Kuala+Lumpur+Federal+Territory+of+Kuala+Lumpur+Malaysia/petronas+twin+towers/@3.1529373,101.6818148,14z/data=!4m14!4m13!1m5!1m1!1s0x31cc49c0442ff9a7:0xdec2e43a59380537!2m2!1d101.6860525!2d3.1342702!1m5!1m1!1s0x31cc37d12d669c1f:0x9e3afdd17c8a9056!2m2!1d101.7116!2d3.1579!5i2">Click for the route</a>
+					<h4>By Train</h4>
+					<p>From KL Sentral Station, go to the LRT Platform. Then board the LRT train to the Gombak direction. The LRT will bring you directly to KLCC station, which is only 5 stations away (KL Sentral -> Pasar Seni Station -> Masjid Jamek Station -> Dang Wangi Station -> Kampung Baru Station -> KLCC Station)
+					<a href="https://www.myrapid.com.my/traveling-with-us/how-to-travel-with-us/rapid-kl/monorail-and-lrts">Click here for the LRT Page</a></p>
+					</div>					
+				</div>
+			</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/KLCC/klcc3.gif" alt=""/>
+					<h2>Contact</h2>
+					<p>For further information :</p>
+					<div class="scroll">
+					<p><strong>Petronas Twin Towers Visit Operation</strong>
+					<br>Lower Ground (Concourse) Level, PETRONAS Twin Towers,Kuala Lumpur City Centre, 50088 Kuala Lumpur, Malaysia
+					<br><strong>Phone:</strong> +603-2331 8080
+					<br><strong>Fax:</strong> +603-2331 1723
+					<br><strong>Email:</strong> skybridge@petronas.com.my</p>
+					<a href="http://www.petronastwintowers.com.my/">Visit Website</a>
+					</div>				
+				</div>
+			</div>
+		</div>
+	</div>
+<section id="ltd_map_sec">	  
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="map">						
+			<h1>KLCC MAP</h1><a href="#slidingDiv3" class="show_hide" rel="#slidingDiv3"><i class="fa fa-angle-up"></i></a>
+			<div id="slidingDiv3">
+				<div class="map_area">
+					<div id="googleMapKLCC" style="width:100%;height:300px;"></div>
+				</div>
+			</div>	
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+</section>
+
+
+
+
+
+<!-- Mount Kinabalu -->
+<section id="kinabalu">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+				<h1>___________________</h1>
+					<h1>Mount Kinabalu, Sabah</h1>
+				</div>			
+			</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/Kinabalu/Kinabalu (1).gif" alt=""/>
+					<h2>History</h2>
+					<div class="scroll">
+					<p>Mount Kinabalu is the tallest mountain in Malaysia and the 20th tallest in the World. Mount Kinabalu towers 4095 meters (13,435 feet) above sea level.
+					It is made up of molten rock formed millions of years ago. Mainly because of the biological diversity the mountain is listed as UNESCO World Heritage Site.
+					It has also been designated as a Centre of Plant Diversity for Southeast Asia. Mount Kinabalu and its surrounding Park has a very wide range of habitats, from rich tropical lowland and hill rainforest to tropical mountain forest, sub-alpine forest and heath on the higher elevations. 
+					Because of the earth movement, The mountain is still rising at a geologically rapid rate of 5mm per year. In 1851, Sir Hugh Low, then the Colonial Secretary for the British crown colony of Labuan, credited as the first person to climb the mountain, took nine days to reach the summit plateau, traveling in a group of 42 people. 
+					Today more than 200,000 people visit the park each year.</p>
+					</div>
+									
+				</div>
+			</div>			
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/Kinabalu/Kinabalu (2).gif" alt=""/>
+					<h2>Getting There</h2>
+					<div class="scroll">
+					<h3>By Flight</h3>
+					<p>From international and domestic flights to Kota Kinabalu Airport</p>
+					</div>		
+				</div>
+			</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/Kinabalu/Kinabalu (3).gif" alt=""/>
+					<h2>Contact</h2>
+					<p>For further information :</p>
+					<div class="scroll">
+					<p><strong>Amazing Borneo Tours & Events Sdn Bhd</strong>
+					<br>Lot 1-37, Star City North Complex, 1st Floor Jalan Asia City, 88000, Kota Kinabalu, Sabah, Malaysia.
+					<br><strong>Phone:</strong> +012-855-2009
+					<br><strong>Fax:</strong> (+6)088-448-709 
+					<br><strong>Email:</strong> info@mountkinabalu.com </p>
+					<a href="http://www.mountkinabalu.com/">Visit Website</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+<section id="ltd_map_sec">	  
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="map">						
+			<h1>Mount Kinabalu MAP</h1><a href="#slidingDiv4" class="show_hide" rel="#slidingDiv4"><i class="fa fa-angle-up"></i></a>
+			<div id="slidingDiv4">
+				<div class="map_area">
+					<div id="googleMapKinabalu" style="width:100%;height:300px;"></div>
+				</div>
+			</div>	
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+</section>
+
+
+
+
+
+
+
+<!-- National Monument -->
+<section id="monument">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+				<h1>___________________</h1>
+					<h1>National Monument, Kuala Lumpur</h1>
+				</div>			
+			</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/Monument/Monument (1).gif" alt=""/>
+					<h2>History</h2>
+					<div class="scroll">
+					<p>The National Monument is made up of 48,562 sq. meter space and 15,5 meters of height. It has 5 major components which are the monument, the pavilion, the surrounding gardens, the fountains and the war memorial.
+					The National Monument was designed by an American architect, Felix de Weldon and was built at a cost of RM600,000. This monument was completed and officially opened on 8 February 1966, by Ismail Nasiruddin of Terengganu.
+					Each of the 7 bronze human figures symbolizes leadership, suffering, unity, vigilance, strength, courage and sacrifice. The National Monument (Tugu Negara) is made in remembrance of the fallen ‘soldiers’ during the fight for freedom to independence in Malaysia. 
+					It represents the fallen soldiers during the 2nd World War, when Japan occupied this part of Southeastern Asia</p>
+					</div>			
+				</div>
+			</div>			
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/Monument/Monument (2).gif" alt=""/>
+					<h2>Getting There</h2>
+					<div class="scroll">
+					<h3>By Car & Taxi</h3>
+					<p>From KL Sentral Station, Kuala Lumpur it will took about 15 minutes and 5.4 kilometres to reach the destination</p>
+					<a href="https://www.google.com/maps/dir/kl+sentral/Tugu+Negara+Kuala+Lumpur+Federal+Territory+of+Kuala+Lumpur+Malaysia/@3.1414338,101.678881,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x31cc49c0442ff9a7:0xdec2e43a59380537!2m2!1d101.6860525!2d3.1342702!1m5!1m1!1s0x31cc49b57f15fb6b:0x81c00cd713dcea3e!2m2!1d101.6837254!2d3.1492787">Click for the route</a>
+					</div>					
+				</div>
+			</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/Monument/Monument (3).gif" alt=""/>
+					<h2>Contact</h2>
+					<p>For further information :</p>
+					<div class="scroll">
+					<p><strong>Malaysia Tourism Centre (MaTiC)</strong>
+					<br>109 Jalan Ampang, 50450 Kuala Lumpur, Malaysia
+					<br><strong>Phone:</strong> 1300885050
+					<br><strong>Fax:</strong> +603-2162 1149
+					<br><strong>Email:</strong> enquiries@tourism.gov.my </p>
+					<a href="http://www.matic.gov.my/en/">Visit Website</a>
+					</div>	
+				</div>
+			</div>
+			
+		</div>
+	</div>
+<section id="ltd_map_sec">	  
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="map">						
+			<h1>National Monument MAP</h1><a href="#slidingDiv5" class="show_hide" rel="#slidingDiv5"><i class="fa fa-angle-up"></i></a>
+			<div id="slidingDiv5">
+				<div class="map_area">
+					<div id="googleMapMonument" style="width:100%;height:300px;"></div>
+				</div>
+			</div>	
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+</section>
+
+
+
+
+
+
+<!-- National Mosque -->
+<section id="mosque">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+				<h1>___________________</h1>
+					<h1>National Mosque, Kuala Lumpur</h1>
+				</div>			
+			</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/National Mosque/Mosque (1).gif" alt=""/>
+					<h2>History</h2>
+					<div class="scroll">
+					<p>The National Mosque of Malaysia is one of the largest mosques in Southeast Asia. This mosque is located at Jalan Perdana and was officially opened in 1965 with a capacity of 8000 worshippers per session. During the last few years, the capacity has been upgraded up to 15000 worshippers. 
+					The original structure was designed by a three-person team from the Public Works Department, the UK architect Howard Ashley, Malaysians Hisham Albakri and Baharuddin Kassim. The National Mosque was built on a land area of 13 acres with a Minaret of height up to 73 metres and 16 folds in umbrella dome roof. 
+					There’s a interesting fact to it. The 245ft high minaret which is in the form of an 18-pointed star, represents the 13 states of Malaysia and the five pillars of Islam.  Visitors are welcome but are required to dress respectably and remain solemn</p>
+					</div>					
+				</div>
+			</div>			
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/National Mosque/Mosque (2).gif" alt=""/>
+					<h2>Getting There</h2>
+					<div class="scroll">
+					<h3>By Car & Taxi</h3>
+					<p>From KL Sentral Station, Kuala Lumpur it will took about 6 minutes and 2.6 kilometres to reach the destination</p>
+					<a href="https://www.google.com/maps/dir/kl+sentral/Masjid+Negara+Kuala+Lumpur+Federal+Territory+of+Kuala+Lumpur+Malaysia/@3.1367014,101.6837744,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x31cc49c0442ff9a7:0xdec2e43a59380537!2m2!1d101.6860525!2d3.1342702!1m5!1m1!1s0x31cc49cf637d4037:0xdc50cc4d8ec3e98e!2m2!1d101.6918681!2d3.1419405!3e0">Click for the route</a>
+					</div>		
+				</div>
+			</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/National Mosque/Mosque (3).gif" alt=""/>
+					<h2>Contact</h2>
+					<p>For further information :</p>
+					<div class="scroll">
+					<p><strong>Masjid Negara</strong>
+					<br>Jalan Perdana,50480, Kuala Lumpur
+					<br><strong>Phone:</strong> +603-26937784
+					<br><strong>Fax:</strong> +603-26913696
+					<a href="http://www.masjidnegara.gov.my/v2/">Visit Website</a></div>	
+				</div>
+			</div>
+						
+
+		</div>
+	</div>
+	<section id="ltd_map_sec">	  
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="map">						
+			<h1>National Mosque MAP</h1><a href="#slidingDiv6" class="show_hide" rel="#slidingDiv6"><i class="fa fa-angle-up"></i></a>
+			<div id="slidingDiv6">
+				<div class="map_area">
+					<div id="googleMapMosque" style="width:100%;height:300px;"></div>
+				</div>
+			</div>	
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+</section>
+
+
+
+
+
+
+<!-- Niah National Park -->
+<section id="niahpark">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+				<h1>___________________</h1>
+					<h1>Niah National Park, Sarawak</h1>
+				</div>			
+			</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/Niah/Niah (1).gif" alt=""/>
+					<h2>History</h2>
+					<div class="scroll">
+					<p>One of the must visit caves in Sarawak is the Niah Caves. The Niah Caves is located at the Niah National Park. It is one of the world's largest limestones caves and the oldest caves in Malaysia with some amazing history that dates to the stone ages. 
+					The park’s main claim to fame is its role as one of the birthplaces of civilisation. The oldest modern human remains in Southeast Asia were found at Niah, thus the park becomes one of the most important archaeological sites in the world. 
+					Niah caves in not only known for its archaeology but also for its nature. It is a vast cave swarming with bats and swiftlets, birds-nests and guano, ancient cave paintings, a majestic rainforest criss-crossed with walking trails, abundant plant and animal life. 
+					The Niah National Park provides some interesting and impressive sights. The area was a major centre of human settlement as early as 40,000 years ago, and features one of the world’s largest cave entrances, Palaeolithic and Neolithic burial sites and iron-age cave paintings.gage, the Park HQ is a pleasant 45 minute stroll along the river bank.</p>
+					</div>		
+				</div>
+			</div>			
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/Niah/Niah (2).gif" alt=""/>
+					<h2>Getting There</h2>
+					<div class="scroll">
+					<h3>By Car</h3>
+					<p>Niah is within easy reach of both Miri (109 km) with 2 hour and Bintulu (131 km) with 3 hour</p>
+					<h3>By Bus & Taxi</h3>
+					<p>Syarikat Bas Suria has a regular bus service to Batu Niah from the Miri Bus Station. The journey will take about  1 hr 40 mins whereas from Bintulu, it will take 2 hours to reach there.</p>
+					<p>From Batu Niah to the Park Headquarters, the Park HQ is about 3 km from Batu Niah. Taxis and tour buses will take you straight there, but if you arrive by bus or a share taxi, you have two choices. A motorised longboat from Batu Niah to the Park HQ or a taxi from batu Niah . The motorised longboats will brings you through delightful jungle scenery. A taxi from Batu Niah  has not much to offer but it is a  good idea if it is raining.</p>
+					<p>Take Bus No.33A from city centre to Pujut Corner Bus Terminal. From here, one can take any bus that goes to either Bintulu, Sibu or Kuching. Get off at the Niah Rest Stop. Bus fare is RM15.00 per person. From the here, take private taxi (about RM30 one-way) to reach Niah National Park HQ.</p>
+					</div>		
+				</div>
+			</div>		
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="lts_pst">						
+					<img src="img/GIF/Niah/Niah (3).gif" alt=""/>
+					<h2>Contact</h2>
+					<p>For further information :</p>
+					<div class="scroll">
+					<p><strong>SARAWAK FORESTRY CORPORATION </strong>
+					<br>Lot 218, KCLD,,Jalan Tapang, Kota Sentosa,93250 Kuching, Sarawak, Malaysia.
+					<br><strong>Phone:</strong> (+6)082-610088
+					<br><strong>Fax:</strong> (+6)082-610099
+					<br><strong>Email:</strong> info@sarawakforestry.com </p>
+					<a href="https://www.sarawakforestry.com/index-2.html">Visit Website</a>
+					</div>			
+				</div>
+			</div>
+				
+
+		</div>
+	</div>
+<section id="ltd_map_sec">	  
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="map">						
+			<h1>Niah National Park MAP</h1><a href="#slidingDiv7" class="show_hide" rel="#slidingDiv7"><i class="fa fa-angle-up"></i></a>
+			<div id="slidingDiv7">
+				<div class="map_area">
+					<div id="googleMapNiah" style="width:100%;height:300px;"></div>
+				</div>
+			</div>	
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+</section>
+
+
+
+
+
+<!-- Contact Us -->
+<section id="contactus">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+					<h1>Contact Us</h1>
+					<h2>We are ready to hear from you</h2>
+				</div>			
+			</div>		
+			<div class="col-sm-6"> 
+				<div id="cnt_form">
+					<form id="contact-form" class="contact" name="contact-form" method="post" action="MAILTO:hazwansalam18@gmail.com">
+					 	<div class="form-group">
+						<input type="text" name="name" class="form-control name-field" required="required" placeholder="Your Name">
+						</div>
+						<div class="form-group">
+							<input type="email" name="email" class="form-control mail-field" required="required" placeholder="Your Email">
+						</div> 
+						<div class="form-group">
+							<textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your Message"></textarea>
+						</div> 
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary">Send </button>
+						</div>
+					</form> 
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6">
+				<div class="cnt_info">
+									  <tr>
+      <td colspan="2" align="center">
+	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.277259669087!2d101.6905709154999!3d3.0481424189273527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4abb7eb2b319%3A0xb4d7b97ec79173e5!2sAsia+Pacific+Institute+Of+Information+Technology%2C+Taman+Teknologi+Malaysia%2C+57000+Kuala+Lumpur%2C+Wilayah+Persekutuan+Kuala+Lumpur%2C+Malaysia!5e0!3m2!1sen!2s!4v1491287685657" width="500" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	  </td>
+    </tr>
+				</div>
+			</div>			
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+<!-- Comments -->
+<section id="comments">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+					<h1>Comments</h1>
+					<h2>Please provide feedbacks to improve our MyVacation Website</h2>
+				</div>			
+			</div>		
+			<div class="col-sm-6"> 
+				<div id="cnt_form">
+					<form id="contact-form" class="contact" name="contact-form" method="post" action="MAILTO:hazwansalam18@gmail.com">
+											
+						
+						<div class="form-group">
+						<input type="text" name="name" class="form-control name-field" required="required" placeholder="Your Name">
+						</div>
+						<div class="form-group">
+							<input type="email" name="email" class="form-control mail-field" required="required" placeholder="Your Email">
+						</div> 
+						<div class="form-group">
+							<input type="contact" name="Contact No" class="form-control mail-field" required="required" placeholder="Your Contact Number">
+						</div>
+						<div class="form-group">
+							<textarea name="comments" id="comments" required="required" class="form-control" rows="8" placeholder="Comments"></textarea>
+						</div> 
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary">Send Comments</button>
+						</div>
+					
+					</form> 
+				</div>
+			</div>
+				
+		</div>
+	</div>
+</section>
+
+
+
+
+
+<!-- Footer -->
+		<footer id="ft_sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="ft">						
+							<ul>
+								<li><a href="www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="www.dribbble.com"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="www.rss.com"><i class="fa fa-rss"></i></a></li>
+								<li><a href="www.flickr.com"><i class="fa fa-flickr"></i></a></li>
+								<li><a href="www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+								<li><a href="www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="www.skype.com"><i class="fa fa-skype"></i></a></li>
+								<li><a href="www.google.com"><i class="fa fa-google"></i></a></li>
+							</ul>					
+						</div>
+						<ul class="copy_right">
+							<li>&copy;MyVacation  2017</li>
+							<li>Developed By MyVacation Team</li>
+						</ul>					
+					</div>	
+				</div>
+			</div>
+		</footer>
+    </body>
+</html>
